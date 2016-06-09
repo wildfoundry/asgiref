@@ -16,7 +16,7 @@ class ChannelLayer(BaseChannelLayer):
     "channel_layer" for easy shared use. Only allows global capacity config.
     """
 
-    def __init__(self, expiry=60, group_expiry=86400, capacity=10, channel_capacity=None):
+    def __init__(self, expiry=60, group_expiry=86400, capacity=10, channel_capacity=None, **kwargs):
         super(ChannelLayer, self).__init__(
             expiry=expiry,
             group_expiry=group_expiry,
