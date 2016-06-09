@@ -11,7 +11,7 @@ class BaseChannelLayer(object):
     save you time.
     """
 
-    def __init__(self, expiry=60, group_expiry=86400, capacity=100, channel_capacity=None, **kwargs):
+    def __init__(self, expiry=60, group_expiry=86400, capacity=100, channel_capacity=None):
         self.expiry = expiry
         self.capacity = capacity
         self.group_expiry = group_expiry
